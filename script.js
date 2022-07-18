@@ -17,11 +17,11 @@
 
   function winner () {
     if (player === computer){
-     return  "draw"
+     return  " It's a tie"
     }
 
-    else if (player == "rock"){
-      if( computer == "paper"){
+    else if (player === "rock"){
+      if( computer === "paper"){
       return "computer won";
         computerScore++;
 
@@ -32,8 +32,8 @@
       
     }
     
-    else if (player == "scissors"){
-      if (computer == "rock"){
+    else if (player === "scissors"){
+      if (computer === "rock"){
       return "computer won"
         computerScore++;
       }else{
@@ -41,8 +41,8 @@
         playerScore++;
       }
     }
-    else if (player == "paper"){
-      if(computer == "scissors"){
+    else if (player === "paper"){
+      if(computer === "scissors"){
       return "computer won";
         computerScore++;
       }
