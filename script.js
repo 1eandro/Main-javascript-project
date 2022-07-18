@@ -5,8 +5,7 @@
   const computerSelection = ["ROCK, PAPER, SCISSORS"];
   let playerScore = 0;
   let computerScore = 0;
-  let player;
-  let computer;
+  
   
 
   function computerPlay (){
@@ -18,17 +17,16 @@
 
   function winner () {
     if (player === computer){
-      resut.textContent = "draw"
+     return  "draw"
     }
 
     else if (player == "rock"){
       if( computer == "paper"){
-        result.textContent = "computer won";
-
+      return "computer won";
         computerScore++;
 
       }else{
-        result.textContent = "player won"
+      return "player won"
         playerScore++;
       }
       
@@ -36,20 +34,20 @@
     
     else if (player == "scissors"){
       if (computer == "rock"){
-        result.textContent = "computer won"
+      return "computer won"
         computerScore++;
       }else{
-        result.textContent ="player won";
+      return"player won";
         playerScore++;
       }
     }
     else if (player == "paper"){
       if(computer == "scissors"){
-        result.textContent = "computer won";
+      return "computer won";
         computerScore++;
       }
       else{
-        result.textContent = "player won";
+      return "player won";
         playerScore++;
       }
     }
