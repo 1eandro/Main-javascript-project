@@ -1,8 +1,8 @@
 
 
   const introduction = prompt(" make your choice!, rock, paper, scissors");
-  const playerSelection = ["rock ,paper, scissors"]
-  const computerSelection = ["ROCK, PAPER, SCISSORS"];
+  const playerSelection = ("rock ,paper, scissors");
+  const computerSelection = ("ROCK, PAPER, SCISSORS");
   let playerScore = 0;
   let computerScore = 0;
   
