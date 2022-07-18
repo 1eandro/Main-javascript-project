@@ -2,7 +2,7 @@
 
   let introduction = prompt(" make your choice!, rock, paper, scissors");
   let playerSelection = ("rock ,paper, scissors");
-  let computerSelection = ("ROCK, PAPER, SCISSORS");
+  let computerSelection = computerPlay();
   let playerScore = 0;
   let computerScore = 0;
   
