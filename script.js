@@ -1,7 +1,7 @@
 
 
   let introduction = prompt(" make your choice!, rock, paper, scissors");
-  let computerChoice = ["rock , paper, scissors"]
+  let computerChoice = ["rock , paper, scissors"] // o array aqui ta declarado errado, tem soh 1 valor aqui
   
  
   let introductionScore = 0;
@@ -38,10 +38,10 @@
     else if (introduction === "rock"){
       if( computerChoice === "paper"){
       return "computer won";
-        Score++;
+        Score++; // essa e outras linhas q vem dps do return, nunca rodam, return eh sempre a ultima linha do bloco. Essa variavel Score tb nao existe em nenhum outro lugar
 
       }else{
-      return " you lose";
+      return " you lose";  // da uma formatada no codigo, ta faltando indentacao, dificulta a leitura
         introductionScore++;
       }
       
@@ -72,7 +72,7 @@
 
   function game (){
     for(let i=0;i<5;i++){
-      introductionSelection = prompt("rock, paper, Scissors");
+      introductionSelection = prompt("rock, paper, Scissors"); //nada ta acontecendo aqui, o prompt ta mandando o valor pra variavel introductionSelection e nada mais.
     }
 
   }
