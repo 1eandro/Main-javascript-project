@@ -1,56 +1,78 @@
 
 
   let introduction = prompt(" make your choice!, rock, paper, scissors");
-  let playerSelection = ("rock ,paper, scissors");
-  let computerSelection = computerPlay();
-  let playerScore = 0;
+  let computerChoice = ["rock , paper, scissors"]
+  
+ 
+  let introductionScore = 0;
   let computerScore = 0;
-  
-  
+
+  let rock = 1;
+  let paper = 2;
+  let scissors = 3;
+
 
   function computerPlay (){
-    Math.floor(Math.random()*3);
+    
+     let computerChoice = Math.floor(Math.random()*3);
+     
+    if (computerChoice === 1){
+      return "rock";
+    }else if ( computerChoice === 2){
+      return "paper"
+    }else{
+      return "scissors";
+    }
+
     
   }
+ 
+  console.log(computerPlay(computerChoice))
+ 
 
-  
-
-  function winner () {
-    if (player === computer){
+  function winner ( ) {
+    if (introduction === computerChoice){
      return  " It's a tie";
     }
 
-    else if (player === "rock"){
-      if( computer === "paper"){
+    else if (introduction === "rock"){
+      if( computerChoice === "paper"){
       return "computer won";
-        computerScore++;
+        Score++;
 
       }else{
-      return "player won";
-        playerScore++;
+      return " you lose";
+        introductionScore++;
       }
       
     }
     
-    else if (player === "scissors"){
-      if (computer === "rock"){
+    else if (introduction === "scissors"){
+      if (computerChoice === "rock"){
       return "computer won";
         computerScore++;
       }else{
-      return"player won";
-        playerScore++;
+      return"You won";
+        introductionScore++;
       }
     }
-    else if (player === "paper"){
-      if(computer === "scissors"){
+    else if (introduction === "paper"){
+      if(computerChoice === "scissors"){
       return "computer won";
         computerScore++;
       }
       else{
-      return "player won";
-        playerScore++;
+      return "You won";
+        introductionScore++;
       }
     }
   }
+  console.log(winner(introduction,computerChoice));
 
-  
+
+  function game (){
+    for(let i=0;i<5;i++){
+      introductionSelection = prompt("rock, paper, Scissors");
+    }
+
+  }
